@@ -34,6 +34,7 @@ except ImportError:
 
 # Config
 # set this to the default remote to use in repo
+
 default_rem = "Nexus"
 # set this to the default revision to use (branch/tag name)
 default_rev = "android-4.4"
@@ -44,6 +45,7 @@ default_team_rem = "NexusCnMod"
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
 android_team = "Nexus"
+
 
 
 def check_repo_exists(git_data):
@@ -206,7 +208,9 @@ def parse_device_from_folder(device):
 
 
 def parse_dependency_file(location):
+
     dep_file = "nexus.dependencies"
+
     dep_location = '/'.join([location, dep_file])
     if not os.path.isfile(dep_location):
         print("WARNING: %s file not found" % dep_location)

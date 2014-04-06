@@ -478,6 +478,7 @@ function breakfast()
     CUSTOM_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
     add_lunch_combo full-eng
+
     for f in `/bin/ls vendor/nexus/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
@@ -494,6 +495,7 @@ function breakfast()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
+
             # This is probably just the nexus model name
             if [ -z "$variant" ]; then
                 variant="userdebug"
