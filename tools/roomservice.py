@@ -40,7 +40,7 @@ default_rem = "Nexus"
 default_rev = "android-4.4"
 # set this to the remote that you use for projects from your team repos
 # example fetch="https://github.com/NexusCnMod"
-default_team_rem = "NexusCnMod"
+default_team_rem = "nexus"
 # this shouldn't change unless google makes changes
 local_manifest_dir = ".repo/local_manifests"
 # change this to your name on github (or equivalent hosting)
