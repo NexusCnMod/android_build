@@ -38,7 +38,6 @@ PRODUCT_PACKAGES := \
 	SoftKeyboard \
 	SystemUI \
 	Launcher2 \
-	Development \
 	DevelopmentSettings \
 	Fallback \
 	Settings \
