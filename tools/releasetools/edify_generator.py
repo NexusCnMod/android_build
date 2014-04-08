@@ -115,6 +115,7 @@ class EdifyGenerator(object):
     self.script.append('set_perm(0, 0, 0644, "/tmp/backuptool.functions");')
     self.script.append(('run_program("/tmp/backuptool.sh", "%s");' % command))
     if command == "restore":
+        self.script.append('set_perm(0,0,0755,"/system/etc/install-recovery.sh");')
         self.script.append('delete("/system/bin/backuptool.sh");')
         self.script.append('delete("/system/bin/backuptool.functions");')
 
